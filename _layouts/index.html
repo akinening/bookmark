@@ -19,7 +19,12 @@
 <body>
     <aside class="side-left">
         <nav class="menu">
-            <a class="menu-list" href="">TOP</a>
+            <a class="menu-list" href="./">TOP</a>
+            {% if page.permalink == "icon" %}
+                <a class="menu-list active" href="./icon">アイコン</a>
+            {% else %}
+                <a class="menu-list" href="./icon">アイコン</a>
+            {% endif %}
             <a class="menu-list" href="">グラフィック</a>
             <a class="menu-list" href="">UI</a>
             <a class="menu-list" href="">ロゴ</a>
@@ -90,14 +95,17 @@ a {
     font-weight: bold;
     padding: 13px 0 13px 32px;
 }
-.menu-list:hover {
+.menu-list:hover,
+.menu-list .active {
     position: relative;
     color: #333;
     background-color: white;
     border-radius: 28px 0 0 28px;
 }
 .menu-list:hover::before,
-.menu-list:hover::after {
+.menu-list:hover::after,
+.menu-list .active::before,
+.menu-list .active::after {
     content: '';
     position: absolute;
     display: block;
@@ -107,10 +115,12 @@ a {
     background-image: url(./assets/rounded.svg);
     background-size: cover;
 }
-.menu-list:hover::before {
+.menu-list:hover::before,
+.menu-list .active::before {
     top: -28px;
 }
-.menu-list:hover::after {
+.menu-list:hover::after,
+.menu-list .active::after {
     bottom: -28px;
     transform: scale(1, -1);
 }
