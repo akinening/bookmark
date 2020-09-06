@@ -19,12 +19,18 @@
 <body>
     <aside class="side-left">
         <nav class="menu">
-            <a class="menu-list" href="./">TOP</a>
-            {% if page.active == "icon" %}
-                <a class="menu-list active" href="./icon">アイコン</a>
+            {% if page.active == "top" %}
+            <a class="menu-list active" href="./">TOP</a>
             {% else %}
-                <a class="menu-list" href="./icon">アイコン</a>
+            <a class="menu-list" href="./">TOP</a>
             {% endif %}
+
+            {% if page.active == "icon" %}
+            <a class="menu-list active" href="./icon">アイコン</a>
+            {% else %}
+            <a class="menu-list" href="./icon">アイコン</a>
+            {% endif %}
+
             <a class="menu-list" href="">グラフィック</a>
             <a class="menu-list" href="">UI</a>
             <a class="menu-list" href="">ロゴ</a>
