@@ -96,14 +96,11 @@ a {
     font-weight: bold;
     padding: 13px 0 13px 32px;
 }
-.menu-list:hover,
 .active {
     color: #333;
     background-color: #fff;
     border-radius: 28px 0 0 28px;
 }
-.menu-list:hover::before,
-.menu-list:hover::after,
 .active::before,
 .active::after {
     content: '';
@@ -115,11 +112,9 @@ a {
     background-image: url(./assets/rounded.svg);
     background-size: cover;
 }
-.menu-list:hover::before,
 .active::before {
     top: -28px;
 }
-.menu-list:hover::after,
 .active::after {
     bottom: -28px;
     transform: scale(1, -1);
