@@ -57,8 +57,11 @@
     <section class="main">
         {% if page.active == "top" %}
         <div class="banner">
-            <p><span>このページはつくりかけですにょ。</span><br>おとといきやがれですにょ。</p>
-            <img src="https://akinening.github.io/times/assets/penguin.png" alt="ぺんぎんさん">
+            <p>
+                <span>さあ、デザインの旅へ。</span><br>
+                日々のデザイン業務でよく使うツールの場所を、１つのサイトにまとめました。
+            </p>
+            <img src="file:///Users/akinen/Desktop/gummy-location.svg" alt="ぺんぎんさん">
         </div>
         {% endif %}
 
@@ -159,16 +162,19 @@ a {
 .banner p {
     color: #fff;
     margin: 32px;
+    width: 360px;
 }
 .banner p span {
+    display: inline-block;
+    margin-bottom: 8px;
     font-size: 24px;
     font-weight: bold;
 }
 .banner img {
     position: absolute;
-    top: 0;
-    right: 32px;
-    width: 200px;
+    top: -50px;
+    right: -29px;
+    width: 293px;
 }
 .article {
     margin: 48px 0 32px;
