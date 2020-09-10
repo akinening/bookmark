@@ -5,7 +5,7 @@
     <title>デザイン便利ツール</title>
     <meta charset="UTF-8">
     <meta name="description" content="Webデザインに関する情報を満載したページです。">
-    <meta name="keywords" content="八王子, ニュース, 新聞, 観光, グルメ, 広報, プレスリリース">
+    <meta name="keywords" content="デザイン, 便利, ツール">
 
     <meta property="og:title" content="デザイン便利ツール" />
     <meta property="og:type" content="website" />
@@ -37,6 +37,12 @@
             <a class="menu-list" href="./illust">イラスト</a>
             {% endif %}
 
+            {% if page.active == "color" %}
+            <a class="menu-list active" href="./color">配色</a>
+            {% else %}
+            <a class="menu-list" href="./color">配色</a>
+            {% endif %}
+
             <a class="menu-list" href="https://www.notion.so/akinen/Design-Resources-by-Akinen-79dc82356a2a4a15b52a696a9fbf8315">その他</a>
 
             <!-- <a class="menu-list" href="">グラフィック</a>
@@ -46,8 +52,7 @@
             <a class="menu-list" href="">UX・戦略</a>
             <a class="menu-list" href="">ブランド</a>
             <a class="menu-list" href="">モーション</a>
-            <a class="menu-list" href="">ツール</a>
-            <a class="menu-list" href="">イラスト</a> -->
+            <a class="menu-list" href="">ツール</a> -->
         </nav>
     </aside>
     <section class="main">
