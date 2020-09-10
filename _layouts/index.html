@@ -73,7 +73,7 @@
             {{ content }}
 
             {% if page.active == "top" %}
-            <a class="card" href="https://dribbble.com/">
+            <a class="card" href="https://dribbble.com/" target="_blank">
                 <img src="https://assets.st-note.com/production/uploads/images/7408223/rectangle_large_type_2_6ea9ccdcc8fc81d64a4e3446046cc477.jpg" alt="dribbble">
                 <p>dribbble</p>
             </a>
@@ -220,11 +220,13 @@ a {
     border-radius: 12px;
 }
 .card {
-    width: 240px;
+    width: 172px;
     padding: 12px;
 }
 .card img {
     width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 12px;
 }
 </style>
