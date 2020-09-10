@@ -2,22 +2,23 @@
 <html lang="ja">
 
 <head>
-    <title>デザイン便利ツール</title>
+    <title>Spott | Webデザインに便利なツール厳選まとめ</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Webデザインに関する情報を満載したページです。">
+    <meta name="description" content="非デザイナーでも使える、Webデザインに便利なツールを厳選してまとめました">
     <meta name="keywords" content="デザイン, 便利, ツール">
 
-    <meta property="og:title" content="デザイン便利ツール" />
+    <meta property="og:title" content="Spott" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://akinening.github.io/bookmark" />
     <meta property="og:image" content="https://akinening.github.io/bookmark/assets/banner.png" />
     <meta property="og:site_name" content="デザイン便利ツール" />
-    <meta property="og:description" content="Webデザインに関する情報を満載したページです。" />
+    <meta property="og:description" content="Webデザインに便利なツールを厳選してまとめました" />
     <meta name="twitter:card" content="summary_large_image" />
 </head>
 
 <body>
     <aside class="side-left">
+        <img class="logo" src="/assets/logo.svg" alt="Spott">
         <nav class="menu">
             {% if page.active == "top" %}
             <a class="menu-list active" href="./">TOP</a>
@@ -47,12 +48,10 @@
 
             <!-- <a class="menu-list" href="">グラフィック</a>
             <a class="menu-list" href="">UI</a>
-            <a class="menu-list" href="">ロゴ</a>
             <a class="menu-list" href="">WEB</a>
             <a class="menu-list" href="">UX・戦略</a>
             <a class="menu-list" href="">ブランド</a>
-            <a class="menu-list" href="">モーション</a>
-            <a class="menu-list" href="">ツール</a> -->
+            <a class="menu-list" href="">モーション</a> -->
         </nav>
     </aside>
     <section class="main">
@@ -102,10 +101,14 @@ a {
     height: 100vh;
     background-color: #111424;
 }
+.logo {
+    width: 200px;
+    margin-top: 8px;
+}
 .menu {
     display: flex;
     flex-direction: column;
-    margin-top: 56px;
+    margin-top: 32px;
     width: 255px;
     float: right;
 }
