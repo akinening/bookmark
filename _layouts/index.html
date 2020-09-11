@@ -65,15 +65,13 @@
                 <span>さあ、デザインの旅へ。</span><br>
                 日々のデザイン業務でよく使うツールの場所を、１つのサイトにまとめました。
             </p>
-            <img src="https://akinening.github.io/bookmark/assets/location.svg" alt="ぺんぎんさん">
+            <img src="https://akinening.github.io/bookmark/assets/location.svg" alt="map">
         </div>
         {% endif %}
 
         <p class="article">Tools</p>
         
         <div class="link">
-            {{ content }}
-
             {% if page.active == "top" %}
             <a class="card" href="https://dribbble.com/" target="_blank">
                 <img src="https://assets.st-note.com/production/uploads/images/7408223/rectangle_large_type_2_6ea9ccdcc8fc81d64a4e3446046cc477.jpg" alt="dribbble">
@@ -85,6 +83,15 @@
                 <p>Pinterest</p>
             </a>
             {% endif %}
+
+            {% if page.active == "illust" %}
+            <a class="card" href="https://icons8.jp/" target="_blank">
+                <img src="https://akinening.github.io/bookmark/assets/having-job.png" alt="icon8">
+                <p>ICON8 - アイコンやイラスト</p>
+            </a>
+            {% endif %}
+
+            {{ content }}
         </div>
     </section>
 </body>
